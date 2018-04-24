@@ -48,7 +48,7 @@ render() {
 }
 ```
 
-Another fairly common and simple way to define a ref is by giving a callback to the ref prop on the element itself:
+Another fairly common and simple way to define a ref is by giving a callback to the ref prop on the element itself. This creates a very basic ref without some of the extra features you get with `createRef()`. In the example below, we'll be able to access this input field just by calling `this.myInput` instead of `this.myInput.current` like we did in the audio example. That `current` property is one of the the things that `createRef()` gives you.
 
 ```javascript
 <input ref={input => (this.myInput = input)} />
