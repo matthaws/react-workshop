@@ -25,4 +25,4 @@ Along the way we'll brush up against some ES7+ JavaScript syntax with which you 
 
 ### Demos
 
-* [PropTypes && default props]('/src/components/propTypes')
+* [PropTypes && default props](src/components/propTypes)
