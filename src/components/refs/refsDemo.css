@@ -1,0 +1,27 @@
+.lets-rock {
+  font-family: "Rock Salt", cursive;
+}
+
+.lets-rock button {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  background-image: none;
+  font-family: "Rock Salt";
+  cursor: pointer;
+  margin: 10px;
+}
+
+.demo-input {
+  margin-top: 50px;
+  height: 25px;
+  width: 100px;
+  transition: all 1s linear;
+}
+
+.demo-input:focus {
+  outline-color: green;
+  width: 200px;
+  height: 75px;
+  font-size: 30px;
+}

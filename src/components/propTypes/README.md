@@ -64,3 +64,5 @@ propTypesDemo.defaultProps = {
   isOn: true
 };
 ```
+
+You are _strongly encouraged_ to define prop types on your React components in your projects moving forward.

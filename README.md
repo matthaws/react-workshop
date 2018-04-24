@@ -22,3 +22,7 @@ Along the way we'll brush up against some ES7+ JavaScript syntax with which you 
 
 * Async / Await syntax for Promises
 * Object Rest/Spread Properties
+
+### Demos
+
+* [PropTypes && default props]('/src/components/propTypes')
