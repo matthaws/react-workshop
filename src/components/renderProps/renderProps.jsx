@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import MouseTracker from "./MouseTracker";
+import "./renderProps.css";
 
-const error = "THAT IS BAD";
+const error = null;
 
 const RenderPropsDemo = () => (
   <section>
@@ -24,13 +25,12 @@ class EnhancedInput extends Component {
 
   render() {
     const inputProps = {
-      id: this.uniqueId,
+      id: this.uniqueId(),
       className: this.props.error ? "input error" : "input"
     };
-
     return (
       <div>
-        <label for={inputProps.id}>{this.props.label}</label>
+        <label htmlFor={inputProps.id}>{this.props.label}</label>
         {this.props.render(inputProps)}
         {this.props.error ? <span>{this.props.error}</span> : null}
       </div>
