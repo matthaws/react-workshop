@@ -26,3 +26,6 @@ Along the way we'll brush up against some ES7+ JavaScript syntax with which you 
 ### Demos
 
 * [PropTypes && default props](src/components/propTypes)
+* [Refs](src/components/refs)
+* [Fragments](src/components/fragments)
+* [Higher Order Components](src/components/higherOrderComponents)
