@@ -14,14 +14,21 @@ Graduates of the aA curriculum have a solid foundational understanding of the Re
 We will also look at some common React design patterns including:
 
 * Higher Order Components
-* Render props
-* Compound Components
 
 Along the way we'll brush up against some ES7+ JavaScript syntax and web APIs with which you may be unfamiliar:
 
 * Async / Await syntax for Promises
 * Object Rest/Spread Properties
 * Fetch for making AJAX requests (rather than JQuery's `$.ajax()`)
+
+### Next Lecture
+
+On May 10, we'll have React: Beyond the Basics THE SEQUEL, where we'll cover:
+
+* render props
+* compound components
+* the context API
+* the suspense API (maybe)
 
 ### Demos
 
