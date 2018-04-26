@@ -1,3 +1,7 @@
+.button {
+  background-image: linear-gradient(blue, green);
+}
+
 .spinner,
 .spinner:before,
 .spinner:after {

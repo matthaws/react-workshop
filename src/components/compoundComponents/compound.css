@@ -1,0 +1,11 @@
+button {
+  margin-top: 10px;
+}
+
+.on {
+  color: green;
+}
+
+.off {
+  color: red;
+}

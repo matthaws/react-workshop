@@ -5,9 +5,22 @@ import withLogger from "./withLogger.jsx";
 import JokeReader from "./JokeReader.jsx";
 
 const HOCDemo = () => {
-  return <main />;
+  const doAThing = () => {
+    console.log("Did a thing!");
+  };
+
+  return (
+    <section>
+      <button className="button" onClick={doAThing}>
+        Button One!
+      </button>
+
+      <button className="button" onClick={doAThing}>
+        <h1>This is a bigger and fancier button!</h1>
+        <p>Why do we even have this button?</p>
+      </button>
+    </section>
+  );
 };
 
 export default HOCDemo;
-
-class Button extends Component {}
