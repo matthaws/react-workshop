@@ -3,24 +3,27 @@ import compose from "lodash/fp/compose";
 import withLoader from "./withLoader.jsx";
 import withLogger from "./withLogger.jsx";
 import JokeReader from "./JokeReader.jsx";
+import fetchJoke from "./api_util";
 
 const HOCDemo = () => {
   const doAThing = () => {
     console.log("Did a thing!");
   };
+  const JokeWithLoader = compose(withLogger, withLoader)(JokeReader);
 
-  return (
-    <section>
-      <button className="button" onClick={doAThing}>
-        Button One!
-      </button>
+  return <JokeWithLoader asyncCall={fetchJoke} />;
+};
 
-      <button className="button" onClick={doAThing}>
-        <h1>This is a bigger and fancier button!</h1>
-        <p>Why do we even have this button?</p>
-      </button>
-    </section>
-  );
+const withButton = customOnClick => {
+  return class Button extends Component {
+    render() {
+      return (
+        <button onClick={customOnClick} className="button">
+          {this.props.children}
+        </button>
+      );
+    }
+  };
 };
 
 export default HOCDemo;

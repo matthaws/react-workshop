@@ -25,7 +25,7 @@ render() {
 }
 ```
 
-We create ref using React's `createRef()` function, then assign that via a prop to the approrpiate element. We can now access the actual HTML audio element via `this.audio.current`. Now that we have a "ref"erence to the native DOM element, we can interact with it directly as we would normally. In the case of an audio element as in the example above, that means we have access to all the methods exposed by the HTML5 audio API:
+We create ref using React's `createRef()` function, then assign that via a prop to the appropriate element. We can now access the actual HTML audio element via `this.audio.current`. Now that we have a "ref"erence to the native DOM element, we can interact with it directly as we would normally. In the case of an audio element as in the example above, that means we have access to all the methods exposed by the HTML5 audio API:
 
 ```javascript
 startMusic = () => this.audio.current.play();

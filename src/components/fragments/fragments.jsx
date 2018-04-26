@@ -16,7 +16,7 @@ const FlexedChildren = ({ number }) => {
     divs.push(<div className="circle" />);
   }
 
-  return <div>{divs}</div>;
+  return <React.Fragment>{divs}</React.Fragment>;
 };
 
 FlexedChildren.propTypes = {

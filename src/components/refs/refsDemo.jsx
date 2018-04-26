@@ -4,11 +4,23 @@ import demo_music from "../../assets/ref_demo_music.mp3";
 import "./refsDemo.css";
 
 class RefsDemo extends Component {
+  constructor(props) {
+    super(props);
+    this.myInput = React.createRef();
+  }
+
+  componentDidMount() {
+    this.myInput.current.focus();
+  }
+
+  startMusic = () => this.audio.play();
+  stopMusic = () => this.audio.pause();
+
   render() {
     return (
       <section className="lets-rock">
         <h1>LETS ROCK!</h1>
-        <audio src={demo_music} />
+        <audio ref={audio => (this.audio = audio)} src={demo_music} />
         <button onClick={this.startMusic} value="Start">
           Start
         </button>
@@ -16,7 +28,8 @@ class RefsDemo extends Component {
           Stop
         </button>
         <br />
-        <input className="demo-input" />
+
+        <input ref={this.myInput} className="demo-input" />
       </section>
     );
   }
