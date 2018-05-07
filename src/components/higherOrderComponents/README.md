@@ -1,6 +1,6 @@
 # Higher Order Components
 
-A Higer Order Component is simply a component that renders another component. You can think of it as a wrapper for other components that modifies or customizes their behavior. The connected container components we use in the Redux cycle are a common example of HOCs in work, but you can make your own in order to have customizable behavior!
+A Higher Order Component is simply a component that renders another component. You can think of it as a wrapper for other components that modifies or customizes their behavior. The connected container components we use in the Redux cycle are a common example of HOCs in work, but you can make your own in order to have customizable behavior!
 
 Here's a very simple example to start. Let's make a custom Button component that we can use whenever we want a `<button>` element - this is an easy way to ensure that all our buttons have uniform behavior and styling:
 
